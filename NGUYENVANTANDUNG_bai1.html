@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+</head>
+<style>
+    body {
+        border-radius: 50px;
+background: #c32222;
+/* box-shadow:  28px 28px 56px #7b1515,
+             -28px -28px 56px #ff2f2f; */
+}
+
+.container {
+
+ width: 400px;
+    height: 500px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  
+}
+
+.header {
+  text-align: center;
+}
+
+.form {
+   
+  margin-top: 20px;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.twitter, .facebook {
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 300px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1 style="    padding-top: 30px;">Login</h1>
+    </div>
+
+    <div class="form">
+      <form action="login.php" method="post">
+        <input style="    margin-top: 10px;" type="text" name="username" placeholder="Username">
+        <input style="    margin-top: 10px;"type="password" name="password" placeholder="Password">
+        <input style="    margin-top: 10px; background-color: #c32222;" type="submit" value="Login">
+      </form>
+    </div>
+
+    <div class="social-media" >
+      <a href="#" style="background-color: #8350fb;" class="twitter">Sign in with Twitter</a>
+      <a href="#" style="background-color: #4c00ff;" class="facebook">Sign in with Facebook</a>
+    </div>
+  </div>
+
+</body>
+</html>
